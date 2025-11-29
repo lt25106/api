@@ -5,5 +5,5 @@ int main() {
   CROW_ROUTE(app, "/")([] {
     return "<h1>What</h1>";
   });
-  app.port(8000).multithreaded().run();
+  app.bindaddr("0.0.0.0").port(8000).multithreaded().run();
 }

@@ -1,4 +1,6 @@
 FROM gcc:latest
-WORKDIR /
-COPY . /
-CMD ["bash", "-c", "g++ main.cpp -I. -Iasio && ./a.out"]
+WORKDIR /app
+COPY . .
+RUN g++ main.cpp -I. -Iasio -o server
+EXPOSE 8000
+CMD ["./server"]
