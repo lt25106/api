@@ -27,6 +27,9 @@ int main() {
           a {
             color: cyan;
           }
+          pre {
+            overflow-x: hidden !important;
+          }
         </style>
       </head>
       <body>
