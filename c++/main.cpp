@@ -11,7 +11,7 @@ int main() {
   std::string code = (res && res->status == 200) ? res->body : "Failed to fetch source code.";
   code = std::regex_replace(code, std::regex("<"), "&lt;");
   code = std::regex_replace(code, std::regex(">"), "&gt;");
-  std::ifstream f("/app/template.html");
+  std::ifstream f("../template.html");
   std::stringstream ss;
   ss << f.rdbuf();
   std::string resp = ss.str();

@@ -1,7 +1,7 @@
 import requests
 response = requests.get("https://cdn.jsdelivr.net/gh/lt25106/api@main/py/main.py")
 
-with open("/app/template.html", "r") as file:
+with open("../template.html", "r") as file:
   template = file.read()
 template = template.replace("__CODE__", response.text)
 template = template.replace("__LANGNAME__", "Python")
