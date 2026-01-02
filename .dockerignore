@@ -1,5 +1,0 @@
-.vscode
-.git
-**/.gitignore
-js/node_modules
-py/__pycache__
