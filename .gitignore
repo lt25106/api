@@ -3,3 +3,7 @@ node_modules
 *.class
 *.exe
 *.out
+bin
+obj
+appsettings.Development.json
+api.sln
